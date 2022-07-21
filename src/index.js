@@ -47,12 +47,12 @@ const App = () => {
           />
         </div>
       </div>
-      <div className='py-8 w-full md:max-w-md lg:max-w-lg mx-auto'>
+      <div className='py-8 w-full md:max-w-md lg:max-w-lg mx-auto flex flex-col justify-center items-center'>
         <Display 
         title = "Statistics" 
         />
-        <table className='table-auto'>
-          <tbody>
+        <table className='table-auto mx-auto w-full'>
+          <tbody className='mx-auto'>
             {
               all !== 0 ?
               <>
@@ -82,8 +82,8 @@ const App = () => {
                 />
               </>
             :
-              <tr className='py-2 pl-2 my-4 bg-gray-100 border shadow-md'>
-                <td className='pl-4 ml-6 md:ml-2 '>No feedback given</td>
+              <tr className='w-full'>
+                <td className='font-black py-2 pl-2 my-4 px-20 bg-gray-100 border shadow-md w-full'>No feedback given</td>
               </tr>
             }
           </tbody>
